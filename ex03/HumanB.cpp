@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 11:25:24 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/28 11:43:03 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:49:33 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ HumanB::~HumanB(void)
 	return;
 }
 
-void	HumanB::setWeapon(Weapon new_weapon)
+void	HumanB::setWeapon(Weapon *new_weapon)
 {
-	this->_weapon = &new_weapon;
+	this->_weapon = new_weapon;
 }
 
 void	HumanB::attack(void) const

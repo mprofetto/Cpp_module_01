@@ -6,11 +6,16 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 11:06:01 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/28 11:21:34 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:42:43 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
+
+Weapon::Weapon()
+{
+	_type = "bare hands";
+}
 
 Weapon::Weapon(std::string type) : _type(type)
 {

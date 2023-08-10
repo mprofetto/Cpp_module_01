@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 11:24:48 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/28 11:41:13 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:48:03 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class HumanB
 	HumanB(std::string name);
 	~HumanB(void);
 
-	void	setWeapon(Weapon new_weapon);
+	void	setWeapon(Weapon *new_weapon);
 	void	attack(void) const;
 
 	private:

@@ -6,7 +6,7 @@
 /*   By: mprofett <mprofett@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:58:00 by mprofett          #+#    #+#             */
-/*   Updated: 2023/07/27 15:35:10 by mprofett         ###   ########.fr       */
+/*   Updated: 2023/08/02 10:00:25 by mprofett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ void	Zombie::announce(void) const
 
 void	Zombie::set_zombie_name(std::string name)
 {
+	std::cout << name << " is " << this->_name << " new name" << std::endl;
 	this->_name = name;
 }
